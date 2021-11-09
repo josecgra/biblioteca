@@ -1,16 +1,33 @@
 @import
-	url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;1,200&family=Zen+Kurenaido&display=swap')
-	;
+	url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;1,200&family=Zen+Kurenaido&display=swap');
 
 * {
 	font-family: 'Indie Flower', cursive;
+	box-sizing: border-box;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	box-sizing: content-box;
+	background-image: url("../img/fondo.jpg");
+	background-position: center;
+	background-size: cover;
+	
 }
+
+h1 {
+	font-size: 3.3em;
+	color: white;
+	text-align:center;
+	text-shadow: 2px 2px 2px #FF0000;
+}
+
+h2 {
+	color:white;
+	text-shadow: 2px 2px 2px #FF0000;
+}
+
 
 table {
 	font-size: 0.8em;
@@ -19,26 +36,96 @@ table {
 }
 
 th, td {
-	border: 1px solid #ddd;
+	border: 1px solid black;
 	padding: 8px;
 }
 
 tr:nth-child(even) {
-	background-color: #f2f2f2;
+	background-color: #ffcece;
+}
+
+tr:nth-child(odd) {
+	background-color: #fff6f6;
 }
 
 tr:hover {
-	background-color: #ddd;
+	background-color: #e8a58f;
 }
 
 th {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	text-align: left;
-	background-color: #04AA6D;
+	background-color: #992600;
 	color: white;
 }
 
-.msginfo {
-	background-color: #04AA6D;color:white; opacity: 0.5
+form {
+	width: 500px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 100px auto;
+    background-color: #e8a58f;
+}
+
+form label {
+    width: 180px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form input {
+    width: 60%;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 3px;
+    margin: 8px 0;
+    line-height: 25px;
+}
+
+form input[type="submit"]{
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #992600;
+}
+
+
+/* navegacion */
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(255,0,0,0.4);
+}
+
+li {
+  float: left;
+}
+
+a {
+	  text-decoration: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 6px;
+  text-shadow: 2px 2px 2px black;
+  transition: 0.5s background-color; 
+}
+
+li a:hover {
+  background-color: #8f1c1c;
+}
+
+#bienvenida {
+	color:white;
+	text-shadow: 2px 2px 2px #FF0000;
 }
